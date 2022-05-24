@@ -82,13 +82,14 @@ c('.pizzaInfo--addButton').addEventListener('click',()=>{
 
     if (key > -1) {
         cart[key].qt += modalQt
+    } else {
+        cart.push({
+            identifier,
+            id:pizzaJson[modalKey].id,
+            size: size,
+            qt: modalQt
+        })
     }
-    cart.push({
-        identifier,
-        id:pizzaJson[modalKey].id,
-        size: size,
-        qt: modalQt
-    })
     updateCart()
     closeModal()
 })
