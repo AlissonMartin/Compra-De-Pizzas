@@ -32,6 +32,8 @@ pizzaJson.map((item, index)=> {
             size.querySelector('span').innerHTML = pizzaJson[key].sizes[sizeIndex]
         })
 
+        c('.pizzaInfo--qt').innerHTML = modalQt
+
         
         c('.pizzaWindowArea').style.opacity = 0
         c('.pizzaWindowArea').style.display = 'flex'
